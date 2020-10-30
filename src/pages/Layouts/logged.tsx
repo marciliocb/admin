@@ -51,7 +51,7 @@ export default function LayoutLogged() {
             // console.log(collapsed, type);
           }}
         >
-          <Link to="/" className="logo block px-3 py-2 text-white text-center">
+          <Link to="/" className="logo block px-3 py-2 text-white text-center bg-gray-100 bg-opacity-25">
             <strong>Base Admin</strong><br />
             Dashboard
           </Link>

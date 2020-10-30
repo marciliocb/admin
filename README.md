@@ -1,5 +1,10 @@
 # Base Admin with React
 
+### Access
+Demo: [Link](https://admin.joseonofre.vercel.app/)\
+login: `admin@admin.com`\
+password: `123456`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### `yarn start`
@@ -15,9 +20,9 @@ Builds the app for production to the `build` folder.
 
 **I'm use only this libraries:**\
 \
-Routes: https://reactrouter.com/ \
-Components and layout: https://ant.design/ \
-Framework css: https://tailwindcss.com/ \
+Routes:-------------------------- https://reactrouter.com/ \
+Components ant design layout:-- https://ant.design/ \
+Framework css:------------------ https://tailwindcss.com/
 
 
 

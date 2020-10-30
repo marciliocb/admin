@@ -1,1 +1,2 @@
-export * from './HeaderPage';
+export * from './HeaderComponent';
+export * from './FormComponent';

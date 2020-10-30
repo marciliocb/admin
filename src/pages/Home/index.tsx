@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { HeaderPage } from "../../components";
+import { HeaderComponent } from "../../components";
 import { ROUTES_HOME } from "../../constants";
 import { useLayout } from "../../contexts";
 
@@ -16,7 +16,7 @@ export default function HomePage() {
 
   return (
     <div>
-      <HeaderPage title="Home Page" />
+      <HeaderComponent title="Home Page" />
     </div>
   )
 }

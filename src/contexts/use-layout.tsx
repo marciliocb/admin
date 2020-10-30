@@ -38,9 +38,7 @@ function useProvideLayout(): LayoutProps {
       localStorage.setItem(TOKEN, 'seu_token_aqui');
       await getUser();
     } catch (error) {
-      notification.error({
-        message: 'Tente novamente'
-      })
+      throw new Error();
     }
   }
 
