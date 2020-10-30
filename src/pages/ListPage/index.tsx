@@ -1,6 +1,6 @@
 import { Button, Col, DatePicker, Form, Input, notification, Row, Select, Space, Table, Tag } from "antd";
 import React, { useEffect, useState } from "react";
-import { FormComponent, HeaderComponent } from "../../components";
+import { ModalForm, HeaderComponent } from "../../components";
 import { ROUTES_LIST } from "../../constants";
 import { useLayout } from "../../contexts";
 import { dataMock } from "./mock";
@@ -64,7 +64,7 @@ export default function ListPage() {
             render: (text: any, record: any) => (
                 <Space size="middle">
                     <a onClick={() => {
-                        setInitialValues({});
+                        setInitialValues({...record});
                     }}>Edit</a>
                     <a>Delete</a>
                 </Space>
@@ -113,7 +113,7 @@ export default function ListPage() {
                 />
             </div>
             {initialValues && (
-                <FormComponent title="Form example" sending={sending} initialValues={initialValues} onSubmit={handleSubmit} onClose={formClose}>
+                <ModalForm title="Form example" sending={sending} initialValues={initialValues} onSubmit={handleSubmit} onClose={formClose}>
                     <Row gutter={16}>
                         <Col span={12}>
                             <Form.Item
@@ -206,7 +206,7 @@ export default function ListPage() {
                             </Form.Item>
                         </Col>
                     </Row>
-                </FormComponent>
+                </ModalForm>
             )}
         </>
     );

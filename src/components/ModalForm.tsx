@@ -1,7 +1,7 @@
 import { Button, Drawer, Form } from "antd";
 import React, { FC, useEffect, useState } from "react";
 
-interface FormProps {
+interface ModalFormProps {
   title: string,
   initialValues: any;
   sending: boolean;
@@ -9,7 +9,7 @@ interface FormProps {
   onClose: () => void;
 }
 
-export const FormComponent: FC<FormProps> = ({ title, initialValues, sending, onSubmit, onClose, children }) => {
+export const ModalForm: FC<ModalFormProps> = ({ title, initialValues, sending, onSubmit, onClose, children }) => {
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -25,11 +25,10 @@ export const FormComponent: FC<FormProps> = ({ title, initialValues, sending, on
   return (
     <Drawer
       title={title}
-      //   placement={placement}
-      //   closable={false}
       onClose={() => setIsVisible(false)}
       afterVisibleChange={handleClose}
       visible={isVisible}
+      placement="bottom"
       footer={
         <div className="flex">
           <Button
